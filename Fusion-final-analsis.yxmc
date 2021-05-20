@@ -14,125 +14,9 @@
         </Annotation>
       </Properties>
     </Node>
-    <Node ToolID="2">
-      <GuiSettings Plugin="PlotlyCharting">
-        <Position x="1906" y="318" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <ChartingFields>
-            <Traces>
-              <type>scatter</type>
-              <mode>lines+markers</mode>
-              <ysrc>Field_1</ysrc>
-              <line>
-                <width>2</width>
-              </line>
-              <marker>
-                <size>6</size>
-                <line>
-                  <width>0</width>
-                </line>
-              </marker>
-              <name>Input Data</name>
-            </Traces>
-            <Traces>
-              <type>scatter</type>
-              <mode>lines</mode>
-              <ysrc>aaa</ysrc>
-              <line>
-                <width>2</width>
-              </line>
-              <marker>
-                <size>6</size>
-                <line>
-                  <width>0</width>
-                </line>
-              </marker>
-              <name>Halfpoint line</name>
-            </Traces>
-            <Traces>
-              <type>scatter</type>
-              <mode>lines</mode>
-              <ysrc>New Field</ysrc>
-              <line>
-                <width>2</width>
-              </line>
-              <name>Derivative</name>
-            </Traces>
-            <Traces>
-              <type>scatter</type>
-              <mode>lines</mode>
-              <line>
-                <width>2</width>
-              </line>
-              <ysrc>out</ysrc>
-              <name>Drop blip Filtering</name>
-            </Traces>
-            <Layout>
-              <title>
-                <text>
-                </text>
-              </title>
-              <font>
-                <family>sans-serif</family>
-                <size>12</size>
-              </font>
-              <autosize>false</autosize>
-              <width>700</width>
-              <height>500</height>
-              <showlegend>true</showlegend>
-              <hovermode>closest</hovermode>
-              <xaxis>
-                <range>-19.280709625499981</range>
-                <range>1711.4624197711883</range>
-                <autorange>false</autorange>
-                <title>
-                  <text>Sample #</text>
-                </title>
-              </xaxis>
-              <yaxis>
-                <range>-43.99327332333408</range>
-                <range>997.51498726582543</range>
-                <autorange>false</autorange>
-                <title>
-                  <text>Input</text>
-                </title>
-                <type>linear</type>
-              </yaxis>
-              <dragmode>pan</dragmode>
-              <margin>
-                <pad>0</pad>
-                <t>100</t>
-                <b>80</b>
-                <l>80</l>
-                <r>80</r>
-              </margin>
-              <legend>
-                <font>
-                  <size>12</size>
-                </font>
-                <borderwidth>0</borderwidth>
-              </legend>
-            </Layout>
-          </ChartingFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="Chart" size="2147483647" source="Report:Chart:" type="V_String" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
-    </Node>
     <Node ToolID="12">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="821" y="450" />
+        <Position x="821" y="438" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -161,297 +45,19 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
     </Node>
-    <Node ToolID="11">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
-        <Position x="718" y="451" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <CartesianMode>Error</CartesianMode>
-          <SelectConfiguration>
-            <Configuration outputConnection="Output">
-              <OrderChanged value="False" />
-              <CommaDecimal value="False" />
-              <SelectFields>
-                <SelectField field="Source_Max_Field_1" selected="False" input="Source_" />
-                <SelectField field="Source_Min_Field_1" selected="False" input="Source_" />
-                <SelectField field="*Unknown" selected="True" />
-              </SelectFields>
-            </Configuration>
-          </SelectConfiguration>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
-            <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
-    </Node>
-    <Node ToolID="9">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="614" y="487" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <OrderChanged value="False" />
-          <CommaDecimal value="False" />
-          <SelectFields>
-            <SelectField field="aaa" selected="True" type="Float" size="4" />
-            <SelectField field="*Unknown" selected="True" />
-          </SelectFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="Max_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
-            <Field name="Min_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
-            <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
-    </Node>
-    <Node ToolID="7">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="510" y="487" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <FormulaFields>
-            <FormulaField expression="([Max_Field_1]+[Min_Field_1])/2" field="aaa" size="1073741823" type="V_WString" />
-          </FormulaFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText><![CDATA[aaa = ([Max_Field_1]+[Min_Field_1])/2
-]]></DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="Max_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
-            <Field name="Min_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
-            <Field name="aaa" size="1073741823" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="V_WString" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
-    </Node>
-    <Node ToolID="5">
-      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="406" y="487" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <SummarizeFields>
-            <SummarizeField field="Field_1" action="Max" rename="Max_Field_1" />
-            <SummarizeField field="Field_1" action="Min" rename="Min_Field_1" />
-          </SummarizeFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="Max_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
-            <Field name="Min_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
-    </Node>
-    <Node ToolID="3">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="303" y="439" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <OrderChanged value="False" />
-          <CommaDecimal value="False" />
-          <SelectFields>
-            <SelectField field="Field_1" selected="True" type="Double" size="8" />
-            <SelectField field="*Unknown" selected="True" />
-          </SelectFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
-    </Node>
-    <Node ToolID="1">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="199" y="439" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Passwords />
-          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">D:\Documents\GitHub\fusion-final-analytics\sample 5.csv</File>
-          <FormatSpecificOptions>
-            <HeaderRow>False</HeaderRow>
-            <IgnoreErrors>False</IgnoreErrors>
-            <AllowShareWrite>False</AllowShareWrite>
-            <ImportLine>1</ImportLine>
-            <FieldLen>254</FieldLen>
-            <SingleThreadRead>False</SingleThreadRead>
-            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
-            <Delimeter>,</Delimeter>
-            <QuoteRecordBreak>False</QuoteRecordBreak>
-            <CodePage>28591</CodePage>
-          </FormatSpecificOptions>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>sample 5.csv</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="Field_1" size="254" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="V_String" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
-    </Node>
-    <Node ToolID="23">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="1444" y="463" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <FormulaFields>
-            <FormulaField expression="if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" field="blip" size="1073741823" type="V_WString" />
-          </FormulaFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>blip = if [firsthpbool] == 1 then 
-if [New Field] &gt;= [User.tolerance] then "up" ...</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
-            <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
-            <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
-            <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="firsthpbool" source="Formula: if [RecordID] &gt;= [First_RecordID] then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int16" />
-            <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
-    </Node>
-    <Node ToolID="24">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="1547" y="462" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <UpdateField value="False" />
-          <UpdateField_Name>blip</UpdateField_Name>
-          <CreateField_Name>shift</CreateField_Name>
-          <CreateField_Type>V_WString</CreateField_Type>
-          <CreateField_Size>4</CreateField_Size>
-          <OtherRows>Empty</OtherRows>
-          <NumRows value="1" />
-          <Expression>if ([Row-1:blip] == "down" || [Row-1:shift] == "down") &amp;&amp; [blip] != "up" then "down"
-
-else [blip]
-
-endif</Expression>
-          <GroupByFields />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>if ([Row-1:blip] == "down" || [Row-1:shift] == "down") &amp;&amp; [bl...</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
-            <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
-            <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
-            <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="firsthpbool" source="Formula: if [RecordID] &gt;= [First_RecordID] then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int16" />
-            <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
-            <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
-    </Node>
-    <Node ToolID="25">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="1651" y="462" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <FormulaFields>
-            <FormulaField expression="if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" field="drob_bool" size="8" type="Int64" />
-          </FormulaFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText><![CDATA[drob_bool = if [shift] == "down" then 1
-
-else 0
-
-endif
-]]></DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
-            <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
-            <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
-            <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="firsthpbool" source="Formula: if [RecordID] &gt;= [First_RecordID] then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int16" />
-            <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
-            <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
-            <Field name="drob_bool" source="Formula: if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
-    </Node>
     <Node ToolID="26">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="1755" y="463" />
+        <Position x="1755" y="451" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <FormulaFields>
-            <FormulaField expression="[drob_bool]*600*[firsthpbool]*abs([Field_1] &lt;= [aaa]+100)" field="out" size="8" type="Int64" />
+            <FormulaField expression="[drob_bool]*300*[firsthpbool]*abs([Field_1] &lt;= [aaa]+100)" field="out" size="8" type="Int64" />
           </FormulaFields>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText><![CDATA[out = [drob_bool]*600*[firsthpbool]*abs([Field_1] <= [aaa]+100)
+          <DefaultAnnotationText><![CDATA[out = [drob_bool]*300*[firsthpbool]*abs([Field_1] <= [aaa]+100)
 ]]></DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
@@ -466,7 +72,7 @@ endif
             <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
             <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
             <Field name="drob_bool" source="Formula: if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
-            <Field name="out" source="Formula: [drob_bool]*600*[firsthpbool]*abs([Field_1] &lt;= [aaa]+100)" type="Int64" />
+            <Field name="out" source="Formula: [drob_bool]*300*[firsthpbool]*abs([Field_1] &lt;= [aaa]+100)" type="Int64" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -474,7 +80,7 @@ endif
     </Node>
     <Node ToolID="27">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="2066" y="859" />
+        <Position x="2070" y="678" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -503,7 +109,7 @@ endif
             <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
             <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
             <Field name="drob_bool" source="Formula: if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
-            <Field name="out" source="Formula: [drob_bool]*600*[firsthpbool]*abs([Field_1] &lt;= [aaa]+100)" type="Int64" />
+            <Field name="out" source="Formula: [drob_bool]*300*[firsthpbool]*abs([Field_1] &lt;= [aaa]+100)" type="Int64" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -511,7 +117,7 @@ endif
     </Node>
     <Node ToolID="28">
       <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
-        <Position x="2688" y="846" />
+        <Position x="2694" y="666" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -532,6 +138,8 @@ endif
             <Field name="blip" selected="False" />
             <Field name="shift" selected="False" />
             <Field name="drob_bool" selected="False" />
+            <Field name="Source_drob_bool" selected="False" />
+            <Field name="Source_First_RecordID" selected="False" />
             <Field name="RecordID2" selected="False" />
           </TableFields>
           <TableStyles>
@@ -557,11 +165,11 @@ endif
     </Node>
     <Node ToolID="29">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="2999" y="882" />
+        <Position x="3066" y="774" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\stewc\AppData\Local\Temp\Engine_25584_5cc8d01902e64b0aa96aff6b3748021e_\Engine_5500_82ae3230b9e34e0286a21c872ed420b4_.yxdb</TempFile>
+          <TempFile>C:\Users\stewc\AppData\Local\Temp\Engine_23692_88dd9bed03d34e248562df4dc57ebb99_\Engine_9520_97270e3f01144bc2a530608c16abf204_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -583,74 +191,18 @@ endif
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
     </Node>
-    <Node ToolID="30">
-      <GuiSettings Plugin="VisualLayout">
-        <Position x="2896" y="331" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <LayoutFields>
-            <Document>
-              <TempFileType>pdf</TempFileType>
-              <PortraitMode value="true" />
-              <RenderType>PDF</RenderType>
-              <PaperType bottom="48" height="1056" left="48" right="48" top="48" width="816">
-                <PageType>Letter (8.5in x 11in)</PageType>
-                <MarginType>0.5in</MarginType>
-              </PaperType>
-            </Document>
-            <Layout>
-              <Node fusedChildren="false" key="1" orientation="vertical" repeatDirection="vertical">
-                <Node connectionName="#1" fieldName="Chart" height="515" isFused="false" isLocked="true" key="2" left="0" orientation="horizontal" repeatDirection="vertical" source="Report:Chart:" subWidth0="719" subWidthCount="1" top="0" width="719" />
-                <Node fusedChildren="false" key="3" orientation="horizontal" repeatDirection="vertical">
-                  <Node connectionName="#2" fieldName="Table" height="816" isFused="false" isLocked="true" key="5" left="2" orientation="horizontal" repeatDirection="vertical" source="Report:Table:Basic:" subWidth0="383" subWidthCount="1" top="0" width="383" />
-                  <Node connectionName="#3" fieldName="Text" height="24" isFused="false" isLocked="true" key="4" left="15" orientation="horizontal" repeatDirection="vertical" source="Report:Text:" subWidth0="269" subWidthCount="1" top="13" width="269" />
-                </Node>
-              </Node>
-            </Layout>
-            <TempFiles>{"#1":"C:\\Users\\stewc\\AppData\\Local\\Temp\\Engine_25584_5cc8d01902e64b0aa96aff6b3748021e_\\Engine_5500_b6b38e6854f54809b3b3e46f577a70aa_.yxdb","#2":"C:\\Users\\stewc\\AppData\\Local\\Temp\\Engine_25584_5cc8d01902e64b0aa96aff6b3748021e_\\Engine_5500_b04464f6053843498f36e7cdf996bd8c_.yxdb","#3":"C:\\Users\\stewc\\AppData\\Local\\Temp\\Engine_25584_5cc8d01902e64b0aa96aff6b3748021e_\\Engine_5500_e424d913a73e47949e1b60bf62f1a912_.yxdb"}</TempFiles>
-            <OriginalSnippets>{"#3":{"Text":["C:\\Users\\stewc\\AppData\\Local\\Temp\\Alteryx_5500_a8558f9e-3e98-4724-acbd-2ce7da3c3e09_\\Alteryx_5500_339cf389-a0bb-4a73-ae94-18f11a97f276_.html"]},"#1":{"Chart":["C:\\Users\\stewc\\AppData\\Local\\Temp\\Alteryx_5500_a8558f9e-3e98-4724-acbd-2ce7da3c3e09_\\Alteryx_5500_7552ef74-7ced-452d-bb3a-50af638b1978_.html"]},"#2":{"Table":["C:\\Users\\stewc\\AppData\\Local\\Temp\\Alteryx_5500_a8558f9e-3e98-4724-acbd-2ce7da3c3e09_\\Alteryx_5500_c7f05196-950d-4160-993f-051253606f89_.html"]}}</OriginalSnippets>
-            <OriginalThumbnails>{"#3":{},"#1":{},"#2":{"Table":["C:\\Users\\stewc\\AppData\\Local\\Temp\\Alteryx_5500_a8558f9e-3e98-4724-acbd-2ce7da3c3e09_\\Alteryx_5500_2b8591d4-a4c2-4278-acde-a3aaea0bd7c8_.html"]}}</OriginalThumbnails>
-            <AllowResizing>true</AllowResizing>
-            <CanJoin>false</CanJoin>
-            <VisFolderPath>C:\Users\stewc\AppData\Local\Temp\Alteryx_5500_a8558f9e-3e98-4724-acbd-2ce7da3c3e09_</VisFolderPath>
-            <NumDeletions>0</NumDeletions>
-            <NumTinaToggleUses>0</NumTinaToggleUses>
-            <NumSnippetMoves>1</NumSnippetMoves>
-            <NumSnippetRearrangements>1</NumSnippetRearrangements>
-            <NumIncomingConnections>3</NumIncomingConnections>
-          </LayoutFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="Layout" size="2147483647" source="Report:Layout:" type="V_String" />
-          </RecordInfo>
-          <DocumentInfo>
-            <TempFileType>pdf</TempFileType>
-            <PortraitMode value="true" />
-            <PaperType bottom="36" left="36" right="36" top="36" height="792" width="612" />
-          </DocumentInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerVisualLayout" />
-    </Node>
     <Node ToolID="32">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="2481" y="859" />
+        <Position x="2478" y="678" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Expression>[RecordID] &gt; [User.start point] &amp;&amp; [RecordID] &lt; [User.start point]+50</Expression>
+          <Expression>[RecordID] &gt; [Source_First_RecordID] - 10 &amp;&amp; [RecordID] &lt; [Source_First_RecordID]+20</Expression>
           <Mode>Custom</Mode>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>[RecordID] &gt; [User.start point] &amp;&amp; [RecordID] &lt; [User.start point]+50</DefaultAnnotationText>
+          <DefaultAnnotationText>[RecordID] &gt; [Source_First_RecordID] - 10 &amp;&amp; [RecordID] &lt; [Source_First_RecordID...</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
         <MetaInfo connection="True">
@@ -664,7 +216,9 @@ endif
             <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
             <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
             <Field name="drob_bool" source="Formula: if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
-            <Field name="out" source="Formula: [drob_bool]*600*[firsthpbool]*abs([Field_1] &lt;= [aaa]+100)" type="Int64" />
+            <Field name="out" source="Formula: [drob_bool]*300*[firsthpbool]*abs([Field_1] &lt;= [aaa]+100)" type="Int64" />
+            <Field name="Source_drob_bool" source="Summarize: GroupBy - drob_bool" type="Int64" />
+            <Field name="Source_First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
           </RecordInfo>
         </MetaInfo>
         <MetaInfo connection="False">
@@ -678,7 +232,9 @@ endif
             <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
             <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
             <Field name="drob_bool" source="Formula: if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
-            <Field name="out" source="Formula: [drob_bool]*600*[firsthpbool]*abs([Field_1] &lt;= [aaa]+100)" type="Int64" />
+            <Field name="out" source="Formula: [drob_bool]*300*[firsthpbool]*abs([Field_1] &lt;= [aaa]+100)" type="Int64" />
+            <Field name="Source_drob_bool" source="Summarize: GroupBy - drob_bool" type="Int64" />
+            <Field name="Source_First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -686,7 +242,7 @@ endif
     </Node>
     <Node ToolID="33">
       <GuiSettings Plugin="PortfolioPluginsGui.ComposerRender.PortfolioComposerRender">
-        <Position x="3103" y="331" />
+        <Position x="3786" y="510" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -716,44 +272,9 @@ endif
       </Properties>
       <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerRenderPlugin" />
     </Node>
-    <Node ToolID="34">
-      <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
-        <Position x="2718" y="450" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Images />
-          <Output>Text</Output>
-          <HeaderMode value="False" />
-          <RawMode value="False" />
-          <ValidatePCXML value="True" />
-          <Message />
-          <RichTextMode value="True" />
-          <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
-\viewkind4\uc1\pard\fs24 Your halfpoints dipped [Sum_outder:0] times.\par
-}
-]]></RichTextString>
-          <Styles>
-            <Style Name="TextStyle" />
-          </Styles>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>Your halfpoints dipped [Sum_ou...</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="Sum_outder" source="Summarize: Sum - outder" type="Int64" />
-            <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
-    </Node>
     <Node ToolID="42">
       <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
-        <Position x="906" y="450" />
+        <Position x="906" y="438" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -784,7 +305,7 @@ endif
     </Node>
     <Node ToolID="43">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="1029" y="570" />
+        <Position x="1029" y="558" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -821,37 +342,9 @@ endif
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
     </Node>
-    <Node ToolID="44">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="2218" y="378" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <TempFile>C:\Users\stewc\AppData\Local\Temp\Engine_25584_5cc8d01902e64b0aa96aff6b3748021e_\Engine_5500_0b5a0d86650d492bba6a8aa9bf950648_.yxdb</TempFile>
-          <TempFileDataProfiling />
-          <Layout>
-            <ViewMode>Single</ViewMode>
-            <ViewSize value="100" />
-            <View1>
-              <DefaultTab>Report</DefaultTab>
-              <Hints>
-                <Table />
-              </Hints>
-            </View1>
-            <View2 />
-          </Layout>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-    </Node>
     <Node ToolID="45">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="1132" y="558" />
+        <Position x="1132" y="546" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -874,7 +367,7 @@ endif
     </Node>
     <Node ToolID="46">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
-        <Position x="1236" y="462" />
+        <Position x="1236" y="450" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -910,7 +403,7 @@ endif
     </Node>
     <Node ToolID="47">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="1340" y="463" />
+        <Position x="1326" y="450" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -941,47 +434,15 @@ endif
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
     </Node>
-    <Node ToolID="48">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="1962" y="462" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <FormulaFields>
-            <FormulaField expression="[out]/600" field="out" size="8" type="Int64" />
-          </FormulaFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText><![CDATA[out = [out]/600
-]]></DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
-            <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
-            <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
-            <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="firsthpbool" source="Formula: if [RecordID] &gt;= [First_RecordID] then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int16" />
-            <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
-            <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
-            <Field name="drob_bool" source="Formula: if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
-            <Field name="out" source="Formula: [out]/600" type="Int64" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
-    </Node>
-    <Node ToolID="50">
+    <Node ToolID="77">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="2502" y="450" />
+        <Position x="2190" y="750" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <SummarizeFields>
-            <SummarizeField field="outder" action="Sum" rename="Sum_outder" />
+            <SummarizeField field="drob_bool" action="GroupBy" rename="drob_bool" />
+            <SummarizeField field="RecordID" action="First" rename="First_RecordID" />
           </SummarizeFields>
         </Configuration>
         <Annotation DisplayMode="0">
@@ -991,343 +452,19 @@ endif
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="Sum_outder" source="Summarize: Sum - outder" type="Int64" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
-    </Node>
-    <Node ToolID="51">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="2273" y="462" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <UpdateField value="False" />
-          <UpdateField_Name>RecordID</UpdateField_Name>
-          <CreateField_Name>outder</CreateField_Name>
-          <CreateField_Type>Int32</CreateField_Type>
-          <CreateField_Size>4</CreateField_Size>
-          <OtherRows>Empty</OtherRows>
-          <NumRows value="1" />
-          <Expression>[out]-[Row-1:out]</Expression>
-          <GroupByFields />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>[out]-[Row-1:out]</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
-            <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
-            <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
+            <Field name="drob_bool" source="Summarize: GroupBy - drob_bool" type="Int64" />
             <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="firsthpbool" source="Formula: if [RecordID] &gt;= [First_RecordID] then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int16" />
-            <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
-            <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
-            <Field name="drob_bool" source="Formula: if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
-            <Field name="out" source="Formula: [out]/600" type="Int64" />
-            <Field description="Formula: [out]-[Row-1:out]" name="outder" source="Formula: [out]-[Row-1:out]" type="Int32" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
-    </Node>
-    <Node ToolID="52">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="2377" y="462" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Mode>Simple</Mode>
-          <Simple>
-            <Operator>=</Operator>
-            <Field>outder</Field>
-            <Operands>
-              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
-              <DateType>fixed</DateType>
-              <PeriodDate>2021-05-16 15:46:42</PeriodDate>
-              <PeriodType>
-              </PeriodType>
-              <PeriodCount>0</PeriodCount>
-              <StartDate>2021-05-16 15:46:42</StartDate>
-              <EndDate>2021-05-16 15:46:42</EndDate>
-              <Operand>1</Operand>
-            </Operands>
-          </Simple>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>[outder] = 1</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="True">
-          <RecordInfo>
-            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
-            <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
-            <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
-            <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="firsthpbool" source="Formula: if [RecordID] &gt;= [First_RecordID] then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int16" />
-            <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
-            <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
-            <Field name="drob_bool" source="Formula: if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
-            <Field name="out" source="Formula: [out]/600" type="Int64" />
-            <Field description="Formula: [out]-[Row-1:out]" name="outder" source="Formula: [out]-[Row-1:out]" type="Int32" />
-          </RecordInfo>
-        </MetaInfo>
-        <MetaInfo connection="False">
-          <RecordInfo>
-            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
-            <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
-            <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
-            <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="firsthpbool" source="Formula: if [RecordID] &gt;= [First_RecordID] then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int16" />
-            <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
-            <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
-            <Field name="drob_bool" source="Formula: if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
-            <Field name="out" source="Formula: [out]/600" type="Int64" />
-            <Field description="Formula: [out]-[Row-1:out]" name="outder" source="Formula: [out]-[Row-1:out]" type="Int32" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
-    </Node>
-    <Node ToolID="53">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1938" y="126" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <OrderChanged value="False" />
-          <CommaDecimal value="False" />
-          <SelectFields>
-            <SelectField field="*Unknown" selected="True" />
-          </SelectFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
-            <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
-            <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
-            <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="firsthpbool" source="Formula: if [RecordID] &gt;= [First_RecordID] then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int16" />
-            <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
-            <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
-            <Field name="drob_bool" source="Formula: if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
-            <Field name="out" source="Formula: [drob_bool]*600*[firsthpbool]*abs([Field_1] &lt;= [aaa]+100)" type="Int64" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
-    </Node>
-    <Node ToolID="56">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="2118" y="66" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <UpdateField value="False" />
-          <UpdateField_Name>RecordID</UpdateField_Name>
-          <CreateField_Name>grouping_out</CreateField_Name>
-          <CreateField_Type>Int32</CreateField_Type>
-          <CreateField_Size>4</CreateField_Size>
-          <OtherRows>Empty</OtherRows>
-          <NumRows value="1" />
-          <Expression>if [out] == [Row-1:out] then [Row-1:grouping_out]
-
-else [Row-1:grouping_out] + 1
-
-endif</Expression>
-          <GroupByFields />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>if [out] == [Row-1:out] then [Row-1:grouping_out]
-
-else [Row-...</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
-            <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
-            <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
-            <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="firsthpbool" source="Formula: if [RecordID] &gt;= [First_RecordID] then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int16" />
-            <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
-            <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
-            <Field name="drob_bool" source="Formula: if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
-            <Field name="out" source="Formula: [drob_bool]*600*[firsthpbool]*abs([Field_1] &lt;= [aaa]+100)" type="Int64" />
-            <Field description="Formula: if [out] == [Row-1:out] then [Row-1:grouping_out]&#xA;&#xA;else [Row-1:grouping_out] + 1&#xA;&#xA;endif" name="grouping_out" source="Formula: if [out] == [Row-1:out] then [Row-1:grouping_out]&#xA;&#xA;else [Row-1:grouping_out] + 1&#xA;&#xA;endif" type="Int32" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
-    </Node>
-    <Node ToolID="58">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="2214" y="66" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <FormulaFields>
-            <FormulaField expression="(([grouping_out]*([out]/600))+1)/2" field="grouping_out" size="4" type="Int32" />
-          </FormulaFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText><![CDATA[grouping_out = (([grouping_out]*([out]/600))+1)/2
-]]></DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
-            <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
-            <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
-            <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="firsthpbool" source="Formula: if [RecordID] &gt;= [First_RecordID] then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int16" />
-            <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
-            <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
-            <Field name="drob_bool" source="Formula: if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
-            <Field name="out" source="Formula: [drob_bool]*600*[firsthpbool]*abs([Field_1] &lt;= [aaa]+100)" type="Int64" />
-            <Field description="Formula: if [out] == [Row-1:out] then [Row-1:grouping_out]&#xA;&#xA;else [Row-1:grouping_out] + 1&#xA;&#xA;endif" name="grouping_out" source="Formula: (([grouping_out]*([out]/600))+1)/2" type="Int32" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
-    </Node>
-    <Node ToolID="61">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="2322" y="66" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Mode>Simple</Mode>
-          <Simple>
-            <Operator>&gt;</Operator>
-            <Field>grouping_out</Field>
-            <Operands>
-              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
-              <DateType>fixed</DateType>
-              <PeriodDate>2021-05-16 16:31:09</PeriodDate>
-              <PeriodType>
-              </PeriodType>
-              <PeriodCount>0</PeriodCount>
-              <Operand>0</Operand>
-              <StartDate>2021-05-16 16:31:09</StartDate>
-              <EndDate>2021-05-16 16:31:09</EndDate>
-            </Operands>
-          </Simple>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>[grouping_out] &gt; 0</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="True">
-          <RecordInfo>
-            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
-            <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
-            <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
-            <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="firsthpbool" source="Formula: if [RecordID] &gt;= [First_RecordID] then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int16" />
-            <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
-            <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
-            <Field name="drob_bool" source="Formula: if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
-            <Field name="out" source="Formula: [drob_bool]*600*[firsthpbool]*abs([Field_1] &lt;= [aaa]+100)" type="Int64" />
-            <Field description="Formula: if [out] == [Row-1:out] then [Row-1:grouping_out]&#xA;&#xA;else [Row-1:grouping_out] + 1&#xA;&#xA;endif" name="grouping_out" source="Formula: (([grouping_out]*([out]/600))+1)/2" type="Int32" />
-          </RecordInfo>
-        </MetaInfo>
-        <MetaInfo connection="False">
-          <RecordInfo>
-            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
-            <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
-            <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
-            <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="firsthpbool" source="Formula: if [RecordID] &gt;= [First_RecordID] then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int16" />
-            <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
-            <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
-            <Field name="drob_bool" source="Formula: if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
-            <Field name="out" source="Formula: [drob_bool]*600*[firsthpbool]*abs([Field_1] &lt;= [aaa]+100)" type="Int64" />
-            <Field description="Formula: if [out] == [Row-1:out] then [Row-1:grouping_out]&#xA;&#xA;else [Row-1:grouping_out] + 1&#xA;&#xA;endif" name="grouping_out" source="Formula: (([grouping_out]*([out]/600))+1)/2" type="Int32" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
-    </Node>
-    <Node ToolID="64">
-      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="2538" y="54" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <SummarizeFields>
-            <SummarizeField field="grouping_out" action="GroupBy" rename="grouping_out" />
-            <SummarizeField field="Field_1" action="Avg" rename="Avg_Field_1" />
-          </SummarizeFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field description="Formula: if [out] == [Row-1:out] then [Row-1:grouping_out]&#xA;&#xA;else [Row-1:grouping_out] + 1&#xA;&#xA;endif" name="grouping_out" source="Summarize: GroupBy - grouping_out" type="Int32" />
-            <Field name="Avg_Field_1" source="Summarize: Avg - Field_1" type="Double" />
           </RecordInfo>
           <SortInfo>
-            <Field field="grouping_out" order="Asc" />
+            <Field field="drob_bool" order="Asc" />
           </SortInfo>
         </MetaInfo>
       </Properties>
       <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
     </Node>
-    <Node ToolID="65">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="2706" y="114" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <FormulaFields>
-            <FormulaField expression="[Source_aaa]-[Avg_Field_1]" field="Avg_Field_1" size="8" type="Double" />
-          </FormulaFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText><![CDATA[Avg_Field_1 = [Source_aaa]-[Avg_Field_1]
-]]></DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field description="Formula: if [out] == [Row-1:out] then [Row-1:grouping_out]&#xA;&#xA;else [Row-1:grouping_out] + 1&#xA;&#xA;endif" name="grouping_out" source="Summarize: GroupBy - grouping_out" type="Int32" />
-            <Field name="Avg_Field_1" source="Formula: [Source_aaa]-[Avg_Field_1]" type="Double" />
-            <Field name="Source_aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
-    </Node>
-    <Node ToolID="66">
+    <Node ToolID="78">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
-        <Position x="2610" y="150" />
+        <Position x="2370" y="690" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1337,9 +474,9 @@ else [Row-...</DefaultAnnotationText>
               <OrderChanged value="False" />
               <CommaDecimal value="False" />
               <SelectFields>
-                <SelectField field="Source_Max_Field_1" selected="False" input="Source_" />
-                <SelectField field="Source_Min_Field_1" selected="False" input="Source_" />
-                <SelectField field="Source_aaa" selected="True" rename="Source_aaa" input="Source_" />
+                <SelectField field="Source_drob_bool" selected="True" rename="Source_drob_bool" input="Source_" />
+                <SelectField field="Source_First_RecordID" selected="True" rename="Source_First_RecordID" input="Source_" />
+                <SelectField field="Source_RecordID" selected="False" rename="Source_RecordID" input="Source_" />
                 <SelectField field="*Unknown" selected="True" />
               </SelectFields>
             </Configuration>
@@ -1352,70 +489,338 @@ else [Row-...</DefaultAnnotationText>
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field description="Formula: if [out] == [Row-1:out] then [Row-1:grouping_out]&#xA;&#xA;else [Row-1:grouping_out] + 1&#xA;&#xA;endif" name="grouping_out" source="Summarize: GroupBy - grouping_out" type="Int32" />
-            <Field name="Avg_Field_1" source="Summarize: Avg - Field_1" type="Double" />
-            <Field name="Source_aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="input" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+            <Field name="average" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
+            <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="Derivative" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
+            <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="firsthpbool" source="Formula: if [RecordID] &gt;= [First_RecordID] then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int16" />
+            <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
+            <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
+            <Field name="drob_bool" source="Formula: if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
+            <Field name="out" source="Formula: [drob_bool]*300*[firsthpbool]*abs([Field_1] &lt;= [aaa]+100)" type="Int64" />
+            <Field name="Source_drob_bool" source="Summarize: GroupBy - drob_bool" type="Int64" />
+            <Field name="Source_First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
     </Node>
-    <Node ToolID="67">
+    <Node ToolID="79">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="2442" y="54" />
+        <Position x="2274" y="750" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Expression>[Field_1]&lt;[aaa]</Expression>
-          <Mode>Custom</Mode>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>drob_bool</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2021-05-19 18:39:18</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>1</Operand>
+              <StartDate>2021-05-19 18:39:18</StartDate>
+              <EndDate>2021-05-19 18:39:18</EndDate>
+            </Operands>
+          </Simple>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>[Field_1]&lt;[aaa]</DefaultAnnotationText>
+          <DefaultAnnotationText>[drob_bool] = 1</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
         <MetaInfo connection="True">
           <RecordInfo>
-            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
-            <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
-            <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
+            <Field name="drob_bool" source="Summarize: GroupBy - drob_bool" type="Int64" />
             <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="firsthpbool" source="Formula: if [RecordID] &gt;= [First_RecordID] then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int16" />
-            <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
-            <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
-            <Field name="drob_bool" source="Formula: if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
-            <Field name="out" source="Formula: [drob_bool]*600*[firsthpbool]*abs([Field_1] &lt;= [aaa]+100)" type="Int64" />
-            <Field description="Formula: if [out] == [Row-1:out] then [Row-1:grouping_out]&#xA;&#xA;else [Row-1:grouping_out] + 1&#xA;&#xA;endif" name="grouping_out" source="Formula: (([grouping_out]*([out]/600))+1)/2" type="Int32" />
           </RecordInfo>
+          <SortInfo>
+            <Field field="drob_bool" order="Asc" />
+          </SortInfo>
         </MetaInfo>
         <MetaInfo connection="False">
           <RecordInfo>
-            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
-            <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
-            <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
+            <Field name="drob_bool" source="Summarize: GroupBy - drob_bool" type="Int64" />
             <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="firsthpbool" source="Formula: if [RecordID] &gt;= [First_RecordID] then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int16" />
-            <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
-            <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
-            <Field name="drob_bool" source="Formula: if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
-            <Field name="out" source="Formula: [drob_bool]*600*[firsthpbool]*abs([Field_1] &lt;= [aaa]+100)" type="Int64" />
-            <Field description="Formula: if [out] == [Row-1:out] then [Row-1:grouping_out]&#xA;&#xA;else [Row-1:grouping_out] + 1&#xA;&#xA;endif" name="grouping_out" source="Formula: (([grouping_out]*([out]/600))+1)/2" type="Int32" />
           </RecordInfo>
+          <SortInfo>
+            <Field field="drob_bool" order="Asc" />
+          </SortInfo>
         </MetaInfo>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
     </Node>
-    <Node ToolID="49">
-      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="1986" y="666" width="347.3585" height="50" />
+    <Node ToolID="83">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+        <Position x="2838" y="666" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Caption>Dont rememberwhy i made this, it doesent work</Caption>
+          <Images />
+          <HeaderMode value="True" />
+          <HeaderField>Table</HeaderField>
+          <Position>Above</Position>
+          <RawMode value="False" />
+          <ValidatePCXML value="True" />
+          <Message />
+          <RichTextMode value="True" />
+          <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+\viewkind4\uc1\pard\qc\fs24 Table of values close to the first halfpoint:\par
+}
+]]></RichTextString>
+          <Styles>
+            <Style Name="TextStyle" />
+          </Styles>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Table of values close to the f...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Table" size="2147483647" source="Report:Table:Basic:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+    </Node>
+    <Node ToolID="87">
+      <GuiSettings>
+        <Position x="3606" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="HeaderText">Dance Report</Value>
+          <Value name="IncludeDate">True</Value>
+          <Value name="DateFormat">Month dd, yyyy</Value>
+          <Value name="IncludeImage">False</Value>
+          <Value name="AlteryxLogo">True</Value>
+          <Value name="OwnLogo">False</Value>
+          <Value name="ImageFile" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output13">
+          <RecordInfo>
+            <Field name="Layout" size="2147483647" source="Report:Layout:" type="V_String" />
+            <Field name="Header" size="2147483647" source="Report:Text:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="HeaderMacro.yxmc" />
+    </Node>
+    <Node ToolID="88">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+        <Position x="3702" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupingMode>PerRecord</GroupingMode>
+          <PreserveSourceFields value="False" />
+          <Orientation>V</Orientation>
+          <Separator>Continuous</Separator>
+          <Width>100%</Width>
+          <Height />
+          <BorderStyle Enabled="false" Color="#000000" Width="2" />
+          <SeparatorStyle Enabled="false" Color="#000000" Width="1" />
+          <Padding>0</Padding>
+          <LayoutFields orderChanged="True">
+            <Field name="Header" selected="True" Alignment="Center" Width="" />
+            <Field name="Layout" selected="True" Width="" Alignment="Center" />
+          </LayoutFields>
+          <MergeIntoTable value="False" />
+          <SectionNameForGroup />
+          <SectionNameForAllRecords />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Vertical Layout
+Each Individual Record</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Layout" size="2147483647" source="Report:Layout:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+    </Node>
+    <Node ToolID="91">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+        <Position x="3534" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupingMode>PerRecord</GroupingMode>
+          <PreserveSourceFields value="False" />
+          <Orientation>V</Orientation>
+          <Separator>Continuous</Separator>
+          <Width>100%</Width>
+          <Height />
+          <BorderStyle Enabled="false" Color="#000000" Width="2" />
+          <SeparatorStyle Enabled="true" Color="#000000" Width="1" />
+          <Padding>0</Padding>
+          <LayoutFields orderChanged="False">
+            <Field name="Layout" selected="True" Width="" Alignment="Center" />
+            <Field name="Table" selected="True" Alignment="Center" />
+          </LayoutFields>
+          <MergeIntoTable value="False" />
+          <SectionNameForGroup />
+          <SectionNameForAllRecords />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Vertical Layout
+Each Individual Record</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Layout" size="2147483647" source="Report:Layout:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+    </Node>
+    <Node ToolID="92">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+        <Position x="3342" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupingMode>PerRecord</GroupingMode>
+          <PreserveSourceFields value="False" />
+          <Orientation>H</Orientation>
+          <Separator>Continuous</Separator>
+          <Width>100%</Width>
+          <Height />
+          <BorderStyle Enabled="false" Color="#000000" Width="2" />
+          <SeparatorStyle Enabled="false" Color="#000000" Width="1" />
+          <Padding>0</Padding>
+          <LayoutFields orderChanged="True">
+            <Field name="Chart" selected="True" Alignment="Center" Width="" />
+            <Field name="Text" selected="True" Alignment="Center" />
+          </LayoutFields>
+          <MergeIntoTable value="False" />
+          <SectionNameForGroup />
+          <SectionNameForAllRecords />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Horizontal Layout
+Each Individual Record</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Layout" size="2147483647" source="Report:Layout:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+    </Node>
+    <Node ToolID="93">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="3258" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="True">
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+            <Field name="Chart" size="2147483647" source="Report:Chart:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="Chart" size="2147483647" source="Report:Chart:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="94">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="3426" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="True">
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="Layout" size="2147483647" source="Report:Layout:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Layout" size="2147483647" source="Report:Layout:" type="V_String" />
+            <Field name="Table" size="2147483647" source="Report:Table:Basic:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="Table" size="2147483647" source="Report:Table:Basic:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="81">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="2033" y="509" width="301" height="145" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Generates the graph</Caption>
           <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
-          <Disabled value="True" />
+          <Disabled value="False" />
           <Folded value="False" />
         </Configuration>
         <Annotation DisplayMode="0">
@@ -1425,149 +830,9 @@ else [Row-...</DefaultAnnotationText>
         </Annotation>
       </Properties>
       <ChildNodes>
-        <Node ToolID="36">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="2250" y="714" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <FormulaFields>
-                <FormulaField expression="if [Field_1] &lt; [aaa]+60 &amp;&amp; [Field_1] &gt; [aaa]-60 then 1&#xA;&#xA;else 0&#xA;&#xA;endif" field="halfpointyn" size="8" type="Int64" />
-              </FormulaFields>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText>halfpointyn = if [Field_1] &lt; [aaa]+60 &amp;&amp; [Field_1] &gt; [aaa]-60 then 1
-
-else 0
-
-en...</DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-            <MetaInfo connection="Output">
-              <RecordInfo>
-                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field description="Formula: ([Row-2:Field_1]+[Row-1:Field_1]+[Field_1]+[Row+1:Field_1]+[Row+2:Field_1])/5" name="Field_1" source="Formula: ([Row-2:Field_1]+[Row-1:Field_1]+[Field_1]+[Row+1:Field_1]+[Row+2:Field_1])/5" type="Double" />
-                <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
-                <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
-                <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field name="firsthpbool" source="Formula: if [RecordID] &gt;= [First_RecordID] then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int16" />
-                <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
-                <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
-                <Field name="drob_bool" source="Formula: if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
-                <Field name="out" source="Formula: [drob_bool]*600*[firsthpbool]*abs([Field_1] &lt;= [aaa]+100)" type="Int64" />
-                <Field name="halfpointyn" source="Formula: if [Field_1] &lt; [aaa]+60 &amp;&amp; [Field_1] &gt; [aaa]-60 then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
-              </RecordInfo>
-            </MetaInfo>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
-        </Node>
-        <Node ToolID="37">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="2394" y="726" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <FormulaFields>
-                <FormulaField expression="if abs([New Field]) &lt;= 10 then 1&#xA;&#xA;else 0&#xA;&#xA;endif" field="derbool" size="8" type="Int64" />
-              </FormulaFields>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText><![CDATA[derbool = if abs([New Field]) <= 10 then 1
-
-else 0
-
-endif
-]]></DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-            <MetaInfo connection="Output">
-              <RecordInfo>
-                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field description="Formula: ([Row-2:Field_1]+[Row-1:Field_1]+[Field_1]+[Row+1:Field_1]+[Row+2:Field_1])/5" name="Field_1" source="Formula: ([Row-2:Field_1]+[Row-1:Field_1]+[Field_1]+[Row+1:Field_1]+[Row+2:Field_1])/5" type="Double" />
-                <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
-                <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
-                <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field name="firsthpbool" source="Formula: if [RecordID] &gt;= [First_RecordID] then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int16" />
-                <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
-                <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
-                <Field name="drob_bool" source="Formula: if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
-                <Field name="out" source="Formula: [drob_bool]*600*[firsthpbool]*abs([Field_1] &lt;= [aaa]+100)" type="Int64" />
-                <Field name="halfpointyn" source="Formula: if [Field_1] &lt; [aaa]+60 &amp;&amp; [Field_1] &gt; [aaa]-60 then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
-                <Field name="derbool" source="Formula: if abs([New Field]) &lt;= 10 then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
-              </RecordInfo>
-            </MetaInfo>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
-        </Node>
-        <Node ToolID="38">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="2478" y="726" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <FormulaFields>
-                <FormulaField expression="[halfpointyn]*[derbool]*500" field="hpbool" size="8" type="Int64" />
-              </FormulaFields>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText><![CDATA[hpbool = [halfpointyn]*[derbool]*500
-]]></DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-            <MetaInfo connection="Output">
-              <RecordInfo>
-                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field description="Formula: ([Row-2:Field_1]+[Row-1:Field_1]+[Field_1]+[Row+1:Field_1]+[Row+2:Field_1])/5" name="Field_1" source="Formula: ([Row-2:Field_1]+[Row-1:Field_1]+[Field_1]+[Row+1:Field_1]+[Row+2:Field_1])/5" type="Double" />
-                <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
-                <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
-                <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field name="firsthpbool" source="Formula: if [RecordID] &gt;= [First_RecordID] then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int16" />
-                <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
-                <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
-                <Field name="drob_bool" source="Formula: if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
-                <Field name="out" source="Formula: [drob_bool]*600*[firsthpbool]*abs([Field_1] &lt;= [aaa]+100)" type="Int64" />
-                <Field name="halfpointyn" source="Formula: if [Field_1] &lt; [aaa]+60 &amp;&amp; [Field_1] &gt; [aaa]-60 then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
-                <Field name="derbool" source="Formula: if abs([New Field]) &lt;= 10 then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
-                <Field name="hpbool" source="Formula: [halfpointyn]*[derbool]*500" type="Int64" />
-              </RecordInfo>
-            </MetaInfo>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
-        </Node>
-        <Node ToolID="39">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="2574" y="774" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <TempFile>C:\Users\stewc\AppData\Local\Temp\Engine_21268_d26f071a54f1433b945cf259ac202c0a_\Engine_5500_47e9b9ea0c2946dca8066dd6d3edb92f_.yxdb</TempFile>
-              <TempFileDataProfiling />
-              <Layout>
-                <ViewMode>Single</ViewMode>
-                <ViewSize value="100" />
-                <View1>
-                  <DefaultTab>Profile</DefaultTab>
-                  <Hints>
-                    <Table />
-                  </Hints>
-                </View1>
-                <View2 />
-              </Layout>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-        </Node>
-        <Node ToolID="40">
+        <Node ToolID="2">
           <GuiSettings Plugin="PlotlyCharting">
-            <Position x="2574" y="714" />
+            <Position x="2058" y="570" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1575,12 +840,50 @@ endif
                 <Traces>
                   <type>scatter</type>
                   <mode>lines</mode>
-                  <ysrc>hpbool</ysrc>
+                  <ysrc>Field_1</ysrc>
+                  <line>
+                    <width>2</width>
+                  </line>
+                  <marker>
+                    <size>6</size>
+                    <line>
+                      <width>0</width>
+                    </line>
+                  </marker>
+                  <name>Input Data</name>
                 </Traces>
                 <Traces>
                   <type>scatter</type>
                   <mode>lines</mode>
-                  <ysrc>Field_1</ysrc>
+                  <ysrc>aaa</ysrc>
+                  <line>
+                    <width>2</width>
+                  </line>
+                  <marker>
+                    <size>6</size>
+                    <line>
+                      <width>0</width>
+                    </line>
+                  </marker>
+                  <name>Halfpoint line</name>
+                </Traces>
+                <Traces>
+                  <type>scatter</type>
+                  <mode>lines</mode>
+                  <ysrc>New Field</ysrc>
+                  <line>
+                    <width>2</width>
+                  </line>
+                  <name>Derivative</name>
+                </Traces>
+                <Traces>
+                  <type>scatter</type>
+                  <mode>lines</mode>
+                  <line>
+                    <width>2</width>
+                  </line>
+                  <ysrc>out</ysrc>
+                  <name>Drop blip Filtering</name>
                 </Traces>
                 <Layout>
                   <title>
@@ -1589,27 +892,44 @@ endif
                   </title>
                   <font>
                     <family>sans-serif</family>
+                    <size>12</size>
                   </font>
                   <autosize>false</autosize>
                   <width>700</width>
-                  <height>849</height>
+                  <height>500</height>
                   <showlegend>true</showlegend>
                   <hovermode>closest</hovermode>
                   <xaxis>
-                    <range>-408.16254463225437</range>
-                    <range>1140.1819115917317</range>
-                    <autorange>false</autorange>
-                  </xaxis>
-                  <yaxis>
-                    <range>88.815200131725987</range>
-                    <range>916.46542100171177</range>
+                    <range>-19.280709625499981</range>
+                    <range>1711.4624197711883</range>
                     <autorange>false</autorange>
                     <title>
-                      <text>hpbool</text>
+                      <text>Sample #</text>
+                    </title>
+                  </xaxis>
+                  <yaxis>
+                    <range>-43.99327332333408</range>
+                    <range>997.51498726582543</range>
+                    <autorange>false</autorange>
+                    <title>
+                      <text>Input</text>
                     </title>
                     <type>linear</type>
                   </yaxis>
                   <dragmode>pan</dragmode>
+                  <margin>
+                    <pad>0</pad>
+                    <t>100</t>
+                    <b>80</b>
+                    <l>80</l>
+                    <r>80</r>
+                  </margin>
+                  <legend>
+                    <font>
+                      <size>12</size>
+                    </font>
+                    <borderwidth>0</borderwidth>
+                  </legend>
                 </Layout>
               </ChartingFields>
             </Configuration>
@@ -1626,202 +946,19 @@ endif
           </Properties>
           <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
         </Node>
-        <Node ToolID="41">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-            <Position x="2010" y="726" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <UpdateField value="True" />
-              <UpdateField_Name>Field_1</UpdateField_Name>
-              <CreateField_Name>smooth</CreateField_Name>
-              <CreateField_Type>Int32</CreateField_Type>
-              <CreateField_Size>4</CreateField_Size>
-              <OtherRows>Nearest</OtherRows>
-              <NumRows value="2" />
-              <Expression>([Row-2:Field_1]+[Row-1:Field_1]+[Field_1]+[Row+1:Field_1]+[Row+2:Field_1])/5</Expression>
-              <GroupByFields />
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText>([Row-2:Field_1]+[Row-1:Field_1]+[Field_1]+[Row+1:Field_1]+[R...</DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-            <MetaInfo connection="Output">
-              <RecordInfo>
-                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field description="Formula: ([Row-2:Field_1]+[Row-1:Field_1]+[Field_1]+[Row+1:Field_1]+[Row+2:Field_1])/5" name="Field_1" source="Formula: ([Row-2:Field_1]+[Row-1:Field_1]+[Field_1]+[Row+1:Field_1]+[Row+2:Field_1])/5" type="Double" />
-                <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
-                <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
-                <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field name="firsthpbool" source="Formula: if [RecordID] &gt;= [First_RecordID] then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int16" />
-                <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
-                <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
-                <Field name="drob_bool" source="Formula: if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
-                <Field name="out" source="Formula: [drob_bool]*600*[firsthpbool]*abs([Field_1] &lt;= [aaa]+100)" type="Int64" />
-              </RecordInfo>
-            </MetaInfo>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
-        </Node>
-      </ChildNodes>
-    </Node>
-    <Node ToolID="18">
-      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="54" y="66" width="152.0632" height="24" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Caption>Container 18</Caption>
-          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
-          <Disabled value="True" />
-          <Folded value="True" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <ChildNodes>
-        <Node ToolID="20">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="175" y="115" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <FormulaFields>
-                <FormulaField expression="RAND()*10" field="RowCount" size="4" type="Int32" />
-              </FormulaFields>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText><![CDATA[RowCount = RAND()*10
-]]></DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-            <MetaInfo connection="Output">
-              <RecordInfo>
-                <Field name="RowCount" source="Formula: RAND()*10" type="Int32" />
-              </RecordInfo>
-            </MetaInfo>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
-        </Node>
-        <Node ToolID="21">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
-            <Position x="79" y="115" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <UpdateField value="False" />
-              <UpdateField_Name />
-              <CreateField_Name>RowCount</CreateField_Name>
-              <CreateField_Type>Int32</CreateField_Type>
-              <CreateField_Size>4</CreateField_Size>
-              <Expression_Init>1</Expression_Init>
-              <Expression_Cond>RowCount &lt;= 1000</Expression_Cond>
-              <Expression_Loop>RowCount + 1</Expression_Loop>
-              <RecordCount value="1000" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-              <RecordCount value="0" />
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-            <MetaInfo connection="Output">
-              <RecordInfo>
-                <Field name="RowCount" type="Int32" />
-              </RecordInfo>
-            </MetaInfo>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
-        </Node>
-        <Node ToolID="22">
+        <Node ToolID="44">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="247" y="115" />
+            <Position x="2250" y="558" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\stewc\AppData\Local\Temp\Engine_3036_7482bb6a3b5a493bb35260f63b6652a2_\Engine_26444_011e51ba2567408eab6ea45dc8e67087_.yxdb</TempFile>
+              <TempFile>C:\Users\stewc\AppData\Local\Temp\Engine_23692_88dd9bed03d34e248562df4dc57ebb99_\Engine_9520_e1a8edc14f1843f6a7893eda56451ffd_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
                 <ViewSize value="100" />
                 <View1>
-                  <DefaultTab>Profile</DefaultTab>
+                  <DefaultTab>Report</DefaultTab>
                   <Hints>
                     <Table />
                   </Hints>
@@ -1839,75 +976,968 @@ endif
         </Node>
       </ChildNodes>
     </Node>
+    <Node ToolID="80">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1901" y="185" width="1369" height="309" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Generates the number if times the halfpoint falls out of out of place and by how far</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="34">
+          <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+            <Position x="3090" y="378" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Images />
+              <Output>Text</Output>
+              <HeaderMode value="False" />
+              <RawMode value="False" />
+              <ValidatePCXML value="True" />
+              <Message />
+              <RichTextMode value="True" />
+              <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+\viewkind4\uc1\pard\fs24 Your halfpoints dipped [Sum_outder:0] times.  \par
+On average your half points dropped by [Avg_Avg_Field_1:2] %.\par
+}
+]]></RichTextString>
+              <Styles>
+                <Style Name="TextStyle" />
+              </Styles>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Your halfpoints dipped [Sum_ou...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Avg_Avg_Field_1" source="Formula: [Avg_Avg_Field_1]*100" type="Double" />
+                <Field name="Sum_outder" source="Summarize: Sum - outder" type="Int64" />
+                <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+        </Node>
+        <Node ToolID="48">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1950" y="389.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[out]/300" field="out" size="8" type="Int64" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[out = [out]/300
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
+                <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
+                <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="firsthpbool" source="Formula: if [RecordID] &gt;= [First_RecordID] then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int16" />
+                <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
+                <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
+                <Field name="drob_bool" source="Formula: if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
+                <Field name="out" source="Formula: [out]/300" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="50">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="2490" y="378" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="outder" action="Sum" rename="Sum_outder" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Sum_outder" source="Summarize: Sum - outder" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="51">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+            <Position x="2262" y="390" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UpdateField value="False" />
+              <UpdateField_Name>RecordID</UpdateField_Name>
+              <CreateField_Name>outder</CreateField_Name>
+              <CreateField_Type>Int32</CreateField_Type>
+              <CreateField_Size>4</CreateField_Size>
+              <OtherRows>Empty</OtherRows>
+              <NumRows value="1" />
+              <Expression>[out]-[Row-1:out]</Expression>
+              <GroupByFields />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[out]-[Row-1:out]</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
+                <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
+                <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="firsthpbool" source="Formula: if [RecordID] &gt;= [First_RecordID] then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int16" />
+                <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
+                <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
+                <Field name="drob_bool" source="Formula: if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
+                <Field name="out" source="Formula: [out]/300" type="Int64" />
+                <Field description="Formula: [out]-[Row-1:out]" name="outder" source="Formula: [out]-[Row-1:out]" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+        </Node>
+        <Node ToolID="52">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="2370" y="390" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>outder</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2021-05-16 15:46:42</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>1</Operand>
+                  <StartDate>2021-05-16 15:46:42</StartDate>
+                  <EndDate>2021-05-16 15:46:42</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[outder] = 1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
+                <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
+                <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="firsthpbool" source="Formula: if [RecordID] &gt;= [First_RecordID] then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int16" />
+                <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
+                <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
+                <Field name="drob_bool" source="Formula: if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
+                <Field name="out" source="Formula: [out]/300" type="Int64" />
+                <Field description="Formula: [out]-[Row-1:out]" name="outder" source="Formula: [out]-[Row-1:out]" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
+                <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
+                <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="firsthpbool" source="Formula: if [RecordID] &gt;= [First_RecordID] then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int16" />
+                <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
+                <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
+                <Field name="drob_bool" source="Formula: if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
+                <Field name="out" source="Formula: [out]/300" type="Int64" />
+                <Field description="Formula: [out]-[Row-1:out]" name="outder" source="Formula: [out]-[Row-1:out]" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="53">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1926" y="258.0002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
+                <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
+                <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="firsthpbool" source="Formula: if [RecordID] &gt;= [First_RecordID] then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int16" />
+                <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
+                <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
+                <Field name="drob_bool" source="Formula: if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
+                <Field name="out" source="Formula: [drob_bool]*300*[firsthpbool]*abs([Field_1] &lt;= [aaa]+100)" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="56">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+            <Position x="2118" y="257.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UpdateField value="False" />
+              <UpdateField_Name>RecordID</UpdateField_Name>
+              <CreateField_Name>grouping_out</CreateField_Name>
+              <CreateField_Type>Int32</CreateField_Type>
+              <CreateField_Size>4</CreateField_Size>
+              <OtherRows>Empty</OtherRows>
+              <NumRows value="1" />
+              <Expression>if [out] == [Row-1:out] then [Row-1:grouping_out]
+
+else [Row-1:grouping_out] + 1
+
+endif</Expression>
+              <GroupByFields />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>if [out] == [Row-1:out] then [Row-1:grouping_out]
+
+else [Row-...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
+                <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
+                <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="firsthpbool" source="Formula: if [RecordID] &gt;= [First_RecordID] then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int16" />
+                <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
+                <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
+                <Field name="drob_bool" source="Formula: if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
+                <Field name="out" source="Formula: [drob_bool]*300*[firsthpbool]*abs([Field_1] &lt;= [aaa]+100)" type="Int64" />
+                <Field description="Formula: if [out] == [Row-1:out] then [Row-1:grouping_out]&#xA;&#xA;else [Row-1:grouping_out] + 1&#xA;&#xA;endif" name="grouping_out" source="Formula: if [out] == [Row-1:out] then [Row-1:grouping_out]&#xA;&#xA;else [Row-1:grouping_out] + 1&#xA;&#xA;endif" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+        </Node>
+        <Node ToolID="58">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="2214" y="258" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="(([grouping_out]*([out]/600))+1)/2" field="grouping_out" size="4" type="Int32" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[grouping_out = (([grouping_out]*([out]/600))+1)/2
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
+                <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
+                <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="firsthpbool" source="Formula: if [RecordID] &gt;= [First_RecordID] then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int16" />
+                <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
+                <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
+                <Field name="drob_bool" source="Formula: if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
+                <Field name="out" source="Formula: [drob_bool]*300*[firsthpbool]*abs([Field_1] &lt;= [aaa]+100)" type="Int64" />
+                <Field description="Formula: if [out] == [Row-1:out] then [Row-1:grouping_out]&#xA;&#xA;else [Row-1:grouping_out] + 1&#xA;&#xA;endif" name="grouping_out" source="Formula: (([grouping_out]*([out]/600))+1)/2" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="61">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="2322" y="258" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>&gt;</Operator>
+                <Field>grouping_out</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2021-05-16 16:31:09</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>0</Operand>
+                  <StartDate>2021-05-16 16:31:09</StartDate>
+                  <EndDate>2021-05-16 16:31:09</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[grouping_out] &gt; 0</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
+                <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
+                <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="firsthpbool" source="Formula: if [RecordID] &gt;= [First_RecordID] then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int16" />
+                <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
+                <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
+                <Field name="drob_bool" source="Formula: if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
+                <Field name="out" source="Formula: [drob_bool]*300*[firsthpbool]*abs([Field_1] &lt;= [aaa]+100)" type="Int64" />
+                <Field description="Formula: if [out] == [Row-1:out] then [Row-1:grouping_out]&#xA;&#xA;else [Row-1:grouping_out] + 1&#xA;&#xA;endif" name="grouping_out" source="Formula: (([grouping_out]*([out]/600))+1)/2" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
+                <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
+                <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="firsthpbool" source="Formula: if [RecordID] &gt;= [First_RecordID] then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int16" />
+                <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
+                <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
+                <Field name="drob_bool" source="Formula: if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
+                <Field name="out" source="Formula: [drob_bool]*300*[firsthpbool]*abs([Field_1] &lt;= [aaa]+100)" type="Int64" />
+                <Field description="Formula: if [out] == [Row-1:out] then [Row-1:grouping_out]&#xA;&#xA;else [Row-1:grouping_out] + 1&#xA;&#xA;endif" name="grouping_out" source="Formula: (([grouping_out]*([out]/600))+1)/2" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="64">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="2538" y="234" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="grouping_out" action="GroupBy" rename="grouping_out" />
+                <SummarizeField field="Field_1" action="Avg" rename="Avg_Field_1" />
+                <SummarizeField field="Field_1" action="Min" rename="Min_Field_1" />
+                <SummarizeField field="Field_1" action="Max" rename="Max_Field_1" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="Formula: if [out] == [Row-1:out] then [Row-1:grouping_out]&#xA;&#xA;else [Row-1:grouping_out] + 1&#xA;&#xA;endif" name="grouping_out" source="Summarize: GroupBy - grouping_out" type="Int32" />
+                <Field name="Avg_Field_1" source="Summarize: Avg - Field_1" type="Double" />
+                <Field name="Min_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="Max_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="grouping_out" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="65">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="2730" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="1-([Avg_Field_1]-[Source_Min_Field_1])/([Max_Field_1]-[Source_Min_Field_1])" field="Avg_Field_1" size="8" type="Double" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Avg_Field_1 = 1-([Avg_Field_1]-[Source_Min_Field_1])/([Max_Field_1]-[Source_Min_...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="Formula: if [out] == [Row-1:out] then [Row-1:grouping_out]&#xA;&#xA;else [Row-1:grouping_out] + 1&#xA;&#xA;endif" name="grouping_out" source="Summarize: GroupBy - grouping_out" type="Int32" />
+                <Field name="Avg_Field_1" source="Formula: 1-([Avg_Field_1]-[Source_Min_Field_1])/([Max_Field_1]-[Source_Min_Field_1])" type="Double" />
+                <Field name="Min_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="Max_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="Source_Max_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="Source_Min_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="Source_aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="66">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="2646" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Error</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Source_Max_Field_1" selected="True" rename="Source_Max_Field_1" input="Source_" />
+                    <SelectField field="Source_Min_Field_1" selected="True" rename="Source_Min_Field_1" input="Source_" />
+                    <SelectField field="Source_aaa" selected="True" rename="Source_aaa" input="Source_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="Formula: if [out] == [Row-1:out] then [Row-1:grouping_out]&#xA;&#xA;else [Row-1:grouping_out] + 1&#xA;&#xA;endif" name="grouping_out" source="Summarize: GroupBy - grouping_out" type="Int32" />
+                <Field name="Avg_Field_1" source="Summarize: Avg - Field_1" type="Double" />
+                <Field name="Min_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="Max_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="Source_Max_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="Source_Min_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="Source_aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="67">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="2442" y="246" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[Field_1]&lt;[aaa]</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Field_1]&lt;[aaa]</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
+                <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
+                <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="firsthpbool" source="Formula: if [RecordID] &gt;= [First_RecordID] then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int16" />
+                <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
+                <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
+                <Field name="drob_bool" source="Formula: if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
+                <Field name="out" source="Formula: [drob_bool]*300*[firsthpbool]*abs([Field_1] &lt;= [aaa]+100)" type="Int64" />
+                <Field description="Formula: if [out] == [Row-1:out] then [Row-1:grouping_out]&#xA;&#xA;else [Row-1:grouping_out] + 1&#xA;&#xA;endif" name="grouping_out" source="Formula: (([grouping_out]*([out]/600))+1)/2" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
+                <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
+                <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="firsthpbool" source="Formula: if [RecordID] &gt;= [First_RecordID] then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int16" />
+                <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
+                <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
+                <Field name="drob_bool" source="Formula: if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
+                <Field name="out" source="Formula: [drob_bool]*300*[firsthpbool]*abs([Field_1] &lt;= [aaa]+100)" type="Int64" />
+                <Field description="Formula: if [out] == [Row-1:out] then [Row-1:grouping_out]&#xA;&#xA;else [Row-1:grouping_out] + 1&#xA;&#xA;endif" name="grouping_out" source="Formula: (([grouping_out]*([out]/600))+1)/2" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="68">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="2814" y="318" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Avg_Field_1" action="Avg" rename="Avg_Avg_Field_1" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Avg_Avg_Field_1" source="Summarize: Avg - Avg_Field_1" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="70">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="2922" y="342" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[Avg_Avg_Field_1]*100" field="Avg_Avg_Field_1" size="8" type="Double" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Avg_Avg_Field_1 = [Avg_Avg_Field_1]*100
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Avg_Avg_Field_1" source="Formula: [Avg_Avg_Field_1]*100" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="71">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="3018" y="366" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Error</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Avg_Avg_Field_1" source="Formula: [Avg_Avg_Field_1]*100" type="Double" />
+                <Field name="Sum_outder" source="Summarize: Sum - outder" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="86">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="3186" y="378" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Avg_Avg_Field_1" selected="False" />
+                <SelectField field="Sum_outder" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="76">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1397" y="401" width="360" height="240" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Probably what took me the longest to figure out</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1422" y="450" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" field="blip" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>blip = if [firsthpbool] == 1 then 
+if [New Field] &gt;= [User.tolerance] then "up" ...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
+                <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
+                <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="firsthpbool" source="Formula: if [RecordID] &gt;= [First_RecordID] then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int16" />
+                <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+            <Position x="1530" y="450" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UpdateField value="False" />
+              <UpdateField_Name>blip</UpdateField_Name>
+              <CreateField_Name>shift</CreateField_Name>
+              <CreateField_Type>V_WString</CreateField_Type>
+              <CreateField_Size>4</CreateField_Size>
+              <OtherRows>Empty</OtherRows>
+              <NumRows value="1" />
+              <Expression>if ([Row-1:blip] == "down" || [Row-1:shift] == "down") &amp;&amp; [blip] != "up" then "down"
+
+else [blip]
+
+endif</Expression>
+              <GroupByFields />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>if ([Row-1:blip] == "down" || [Row-1:shift] == "down") &amp;&amp; [bl...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
+                <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
+                <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="firsthpbool" source="Formula: if [RecordID] &gt;= [First_RecordID] then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int16" />
+                <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
+                <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1626" y="450" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" field="drob_bool" size="8" type="Int64" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[drob_bool = if [shift] == "down" then 1
+
+else 0
+
+endif
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
+                <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
+                <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="firsthpbool" source="Formula: if [RecordID] &gt;= [First_RecordID] then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int16" />
+                <Field name="blip" size="1073741823" source="Formula: if [firsthpbool] == 1 then &#xA;if [New Field] &gt;= [User.tolerance] then &quot;up&quot; &#xA;elseif [New Field] &lt;= -[User.tolerance]  then &quot;down&quot;&#xA;else &quot;&quot;&#xA;endif&#xA;else &quot;&quot;&#xA;endif" type="V_WString" />
+                <Field description="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" name="shift" size="4" source="Formula: if ([Row-1:blip] == &quot;down&quot; || [Row-1:shift] == &quot;down&quot;) &amp;&amp; [blip] != &quot;up&quot; then &quot;down&quot;&#xA;&#xA;else [blip]&#xA;&#xA;endif" type="V_WString" />
+                <Field name="drob_bool" source="Formula: if [shift] == &quot;down&quot; then 1&#xA;&#xA;else 0&#xA;&#xA;endif" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="74">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="149" y="377" width="625" height="228" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Import &amp;  find half point</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="690" y="438" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Error</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Source_Max_Field_1" selected="False" input="Source_" />
+                    <SelectField field="Source_Min_Field_1" selected="False" input="Source_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="594" y="474" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="aaa" selected="True" type="Float" size="4" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Max_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="Min_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="486" y="474" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="([Max_Field_1]+[Min_Field_1])/2" field="aaa" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[aaa = ([Max_Field_1]+[Min_Field_1])/2
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Max_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="Min_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="aaa" size="1073741823" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="378" y="474" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Field_1" action="Max" rename="Max_Field_1" />
+                <SummarizeField field="Field_1" action="Min" rename="Min_Field_1" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Max_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="Min_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="282" y="426" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Field_1" selected="True" type="Double" size="8" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="174" y="426" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">D:\Documents\GitHub\fusion-final-analytics\sample 5.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>False</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>sample 5.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Field_1" size="254" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
   </Nodes>
   <Connections>
-    <Connection name="#1">
-      <Origin ToolID="2" Connection="Output" />
-      <Destination ToolID="30" Connection="Input" />
-    </Connection>
-    <Connection name="#2">
-      <Origin ToolID="28" Connection="Output" />
-      <Destination ToolID="30" Connection="Input" />
-    </Connection>
-    <Connection name="#3">
-      <Origin ToolID="34" Connection="Output" />
-      <Destination ToolID="30" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="2" Connection="Output" />
-      <Destination ToolID="44" Connection="Input" />
-    </Connection>
     <Connection>
       <Origin ToolID="12" Connection="Output" />
       <Destination ToolID="42" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="11" Connection="Output" />
-      <Destination ToolID="12" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="9" Connection="Output" />
-      <Destination ToolID="11" Connection="Source" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="3" Connection="Output" />
-      <Destination ToolID="11" Connection="Targets" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="9" Connection="Output" />
-      <Destination ToolID="66" Connection="Source" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="64" Connection="Output" />
-      <Destination ToolID="66" Connection="Targets" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="7" Connection="Output" />
-      <Destination ToolID="9" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="5" Connection="Output" />
-      <Destination ToolID="7" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="3" Connection="Output" />
-      <Destination ToolID="5" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="1" Connection="Output" />
-      <Destination ToolID="3" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="23" Connection="Output" />
-      <Destination ToolID="24" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="24" Connection="Output" />
-      <Destination ToolID="25" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="25" Connection="Output" />
-      <Destination ToolID="26" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="26" Connection="Output" />
@@ -1919,10 +1949,6 @@ endif
     </Connection>
     <Connection>
       <Origin ToolID="26" Connection="Output" />
-      <Destination ToolID="41" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="26" Connection="Output" />
       <Destination ToolID="48" Connection="Input" />
     </Connection>
     <Connection>
@@ -1931,15 +1957,23 @@ endif
     </Connection>
     <Connection>
       <Origin ToolID="27" Connection="Output" />
-      <Destination ToolID="32" Connection="Input" />
+      <Destination ToolID="77" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="78" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="True" />
+      <Destination ToolID="78" Connection="Source" />
     </Connection>
     <Connection>
       <Origin ToolID="28" Connection="Output" />
       <Destination ToolID="29" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="30" Connection="Output" />
-      <Destination ToolID="33" Connection="Input" />
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="83" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="32" Connection="True" />
@@ -1970,12 +2004,68 @@ endif
       <Destination ToolID="23" Connection="Input" />
     </Connection>
     <Connection>
+      <Origin ToolID="77" Connection="Output" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="78" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="83" Connection="Output" />
+      <Destination ToolID="94" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="92" Connection="Output" />
+      <Destination ToolID="94" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="87" Connection="Output13" />
+      <Destination ToolID="88" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="88" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="91" Connection="Output" />
+      <Destination ToolID="87" Connection="Report Layout" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="93" Connection="Join" />
+      <Destination ToolID="92" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="94" Connection="Join" />
+      <Destination ToolID="91" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="93" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="86" Connection="Output" />
+      <Destination ToolID="93" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="86" Connection="Input" />
+    </Connection>
+    <Connection>
       <Origin ToolID="48" Connection="Output" />
       <Destination ToolID="51" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="50" Connection="Output" />
-      <Destination ToolID="34" Connection="Input" />
+      <Destination ToolID="71" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="70" Connection="Output" />
+      <Destination ToolID="71" Connection="Targets" />
     </Connection>
     <Connection>
       <Origin ToolID="51" Connection="Output" />
@@ -2002,6 +2092,18 @@ endif
       <Destination ToolID="67" Connection="Input" />
     </Connection>
     <Connection>
+      <Origin ToolID="64" Connection="Output" />
+      <Destination ToolID="66" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="66" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output" />
+      <Destination ToolID="68" Connection="Input" />
+    </Connection>
+    <Connection>
       <Origin ToolID="66" Connection="Output" />
       <Destination ToolID="65" Connection="Input" />
     </Connection>
@@ -2010,32 +2112,52 @@ endif
       <Destination ToolID="64" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="36" Connection="Output" />
-      <Destination ToolID="37" Connection="Input" />
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="70" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="37" Connection="Output" />
-      <Destination ToolID="38" Connection="Input" />
+      <Origin ToolID="71" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="38" Connection="Output" />
-      <Destination ToolID="39" Connection="Input" />
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="38" Connection="Output" />
-      <Destination ToolID="40" Connection="Input" />
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="41" Connection="Output" />
-      <Destination ToolID="36" Connection="Input" />
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="20" Connection="Output" />
-      <Destination ToolID="22" Connection="Input" />
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="21" Connection="Output" />
-      <Destination ToolID="20" Connection="Input" />
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="11" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="11" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
@@ -2112,12 +2234,9 @@ endif
       <Wiz_OpenOutputTools>
         <Tool ToolId="2" Selected="True" />
         <Tool ToolId="29" Selected="False" />
-        <Tool ToolId="30" Selected="True" />
         <Tool ToolId="33" Selected="True" />
         <Tool ToolId="44" Selected="False" />
-        <Tool ToolId="39" Selected="False" />
-        <Tool ToolId="40" Selected="True" />
-        <Tool ToolId="22" Selected="False" />
+        <Tool ToolId="87" Selected="True" />
       </Wiz_OpenOutputTools>
       <Wiz_OutputMessage />
       <Wiz_NoOutputFilesMessage />
