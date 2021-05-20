@@ -37,7 +37,7 @@
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+            <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
             <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
             <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
           </RecordInfo>
@@ -64,7 +64,7 @@
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+            <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
             <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
             <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
             <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
@@ -80,7 +80,7 @@
     </Node>
     <Node ToolID="33">
       <GuiSettings Plugin="PortfolioPluginsGui.ComposerRender.PortfolioComposerRender">
-        <Position x="3847" y="367" />
+        <Position x="3847" y="379" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -130,7 +130,7 @@
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+            <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
             <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
             <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
           </RecordInfo>
@@ -158,7 +158,7 @@
         <MetaInfo connection="True">
           <RecordInfo>
             <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+            <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
             <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
             <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
           </RecordInfo>
@@ -169,7 +169,7 @@
         <MetaInfo connection="False">
           <RecordInfo>
             <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+            <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
             <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
             <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
           </RecordInfo>
@@ -230,7 +230,7 @@
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+            <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
             <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
             <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
             <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
@@ -262,7 +262,7 @@ endif
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+            <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
             <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
             <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
             <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
@@ -274,7 +274,7 @@ endif
     </Node>
     <Node ToolID="87">
       <GuiSettings>
-        <Position x="3667" y="367" />
+        <Position x="3667" y="379" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -291,6 +291,9 @@ endif
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
         <MetaInfo connection="Output13">
           <RecordInfo>
             <Field name="Layout" size="2147483647" source="Report:Layout:" type="V_String" />
@@ -302,7 +305,7 @@ endif
     </Node>
     <Node ToolID="88">
       <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
-        <Position x="3763" y="367" />
+        <Position x="3763" y="379" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -339,7 +342,7 @@ Each Individual Record</DefaultAnnotationText>
     </Node>
     <Node ToolID="91">
       <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
-        <Position x="3595" y="367" />
+        <Position x="3595" y="379" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -532,7 +535,7 @@ Each Individual Record</DefaultAnnotationText>
             <MetaInfo connection="Output">
               <RecordInfo>
                 <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field name="input" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="input" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
                 <Field name="average" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
                 <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="Derivative" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
                 <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
@@ -554,7 +557,7 @@ Each Individual Record</DefaultAnnotationText>
             <Configuration>
               <TableMode>Basic</TableMode>
               <GroupingFields orderChanged="False" />
-              <Width>100%</Width>
+              <Width>80%</Width>
               <ShowHeader value="True" />
               <ShowBarGraph value="False" />
               <TableFields orderChanged="False">
@@ -600,7 +603,7 @@ Each Individual Record</DefaultAnnotationText>
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\stewc\AppData\Local\Temp\Engine_26156_2184bde6f12c4441bd80be96160c1728_\Engine_28968_5683c8df362143fd8edee8e5c485ac46_.yxdb</TempFile>
+              <TempFile>C:\Users\stewc\AppData\Local\Temp\Engine_28940_6d3c981a2ad64a17815122ea589206c2_\Engine_28968_1e872d3388974f9badedacfb4bb82def_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -639,7 +642,7 @@ Each Individual Record</DefaultAnnotationText>
             <MetaInfo connection="True">
               <RecordInfo>
                 <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field name="input" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="input" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
                 <Field name="average" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
                 <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="Derivative" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
                 <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
@@ -655,7 +658,7 @@ Each Individual Record</DefaultAnnotationText>
             <MetaInfo connection="False">
               <RecordInfo>
                 <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field name="input" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="input" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
                 <Field name="average" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
                 <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="Derivative" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
                 <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
@@ -727,7 +730,7 @@ Each Individual Record</DefaultAnnotationText>
             <MetaInfo connection="Output">
               <RecordInfo>
                 <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field name="input" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="input" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
                 <Field name="average" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
                 <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="Derivative" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
                 <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
@@ -969,7 +972,7 @@ Each Individual Record</DefaultAnnotationText>
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\stewc\AppData\Local\Temp\Engine_26156_2184bde6f12c4441bd80be96160c1728_\Engine_28968_50427aa8840c44799db35e48ac8a38d3_.yxdb</TempFile>
+              <TempFile>C:\Users\stewc\AppData\Local\Temp\Engine_28940_6d3c981a2ad64a17815122ea589206c2_\Engine_28968_a29e74e987b441e2a76e8db488ceeea1_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -1067,7 +1070,7 @@ On average your half points dropped by [Avg_Avg_Field_1:2] %.\par
             <MetaInfo connection="Output">
               <RecordInfo>
                 <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
                 <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
                 <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
                 <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
@@ -1128,7 +1131,7 @@ On average your half points dropped by [Avg_Avg_Field_1:2] %.\par
             <MetaInfo connection="Output">
               <RecordInfo>
                 <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
                 <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
                 <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
                 <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
@@ -1174,7 +1177,7 @@ On average your half points dropped by [Avg_Avg_Field_1:2] %.\par
             <MetaInfo connection="True">
               <RecordInfo>
                 <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
                 <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
                 <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
                 <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
@@ -1189,7 +1192,7 @@ On average your half points dropped by [Avg_Avg_Field_1:2] %.\par
             <MetaInfo connection="False">
               <RecordInfo>
                 <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
                 <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
                 <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
                 <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
@@ -1224,7 +1227,7 @@ On average your half points dropped by [Avg_Avg_Field_1:2] %.\par
             <MetaInfo connection="Output">
               <RecordInfo>
                 <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
                 <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
                 <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
                 <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
@@ -1268,7 +1271,7 @@ else [Row-...</DefaultAnnotationText>
             <MetaInfo connection="Output">
               <RecordInfo>
                 <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
                 <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
                 <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
                 <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
@@ -1302,7 +1305,7 @@ else [Row-...</DefaultAnnotationText>
             <MetaInfo connection="Output">
               <RecordInfo>
                 <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
                 <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
                 <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
                 <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
@@ -1348,7 +1351,7 @@ else [Row-...</DefaultAnnotationText>
             <MetaInfo connection="True">
               <RecordInfo>
                 <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
                 <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
                 <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
                 <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
@@ -1363,7 +1366,7 @@ else [Row-...</DefaultAnnotationText>
             <MetaInfo connection="False">
               <RecordInfo>
                 <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
                 <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
                 <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
                 <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
@@ -1400,8 +1403,8 @@ else [Row-...</DefaultAnnotationText>
               <RecordInfo>
                 <Field description="Formula: if [out] == [Row-1:out] then [Row-1:grouping_out]&#xA;&#xA;else [Row-1:grouping_out] + 1&#xA;&#xA;endif" name="grouping_out" source="Summarize: GroupBy - grouping_out" type="Int32" />
                 <Field name="Avg_Field_1" source="Summarize: Avg - Field_1" type="Double" />
-                <Field name="Min_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
-                <Field name="Max_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="Min_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
+                <Field name="Max_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
               </RecordInfo>
               <SortInfo>
                 <Field field="grouping_out" order="Asc" />
@@ -1429,10 +1432,10 @@ else [Row-...</DefaultAnnotationText>
               <RecordInfo>
                 <Field description="Formula: if [out] == [Row-1:out] then [Row-1:grouping_out]&#xA;&#xA;else [Row-1:grouping_out] + 1&#xA;&#xA;endif" name="grouping_out" source="Summarize: GroupBy - grouping_out" type="Int32" />
                 <Field name="Avg_Field_1" source="Formula: 1-([Avg_Field_1]-[Source_Min_Field_1])/([Max_Field_1]-[Source_Min_Field_1])" type="Double" />
-                <Field name="Min_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
-                <Field name="Max_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
-                <Field name="Source_Max_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
-                <Field name="Source_Min_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="Min_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
+                <Field name="Max_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
+                <Field name="Source_Max_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
+                <Field name="Source_Min_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
                 <Field name="Source_aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
               </RecordInfo>
             </MetaInfo>
@@ -1468,10 +1471,10 @@ else [Row-...</DefaultAnnotationText>
               <RecordInfo>
                 <Field description="Formula: if [out] == [Row-1:out] then [Row-1:grouping_out]&#xA;&#xA;else [Row-1:grouping_out] + 1&#xA;&#xA;endif" name="grouping_out" source="Summarize: GroupBy - grouping_out" type="Int32" />
                 <Field name="Avg_Field_1" source="Summarize: Avg - Field_1" type="Double" />
-                <Field name="Min_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
-                <Field name="Max_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
-                <Field name="Source_Max_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
-                <Field name="Source_Min_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="Min_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
+                <Field name="Max_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
+                <Field name="Source_Max_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
+                <Field name="Source_Min_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
                 <Field name="Source_aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
               </RecordInfo>
             </MetaInfo>
@@ -1495,7 +1498,7 @@ else [Row-...</DefaultAnnotationText>
             <MetaInfo connection="True">
               <RecordInfo>
                 <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
                 <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
                 <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
                 <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
@@ -1510,7 +1513,7 @@ else [Row-...</DefaultAnnotationText>
             <MetaInfo connection="False">
               <RecordInfo>
                 <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
                 <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
                 <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
                 <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
@@ -1634,7 +1637,7 @@ else [Row-...</DefaultAnnotationText>
     </Node>
     <Node ToolID="76">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="1397" y="269" width="348.4431" height="240" />
+        <Position x="1385" y="269" width="348.4431" height="240" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1652,7 +1655,7 @@ else [Row-...</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="23">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="1422" y="318" />
+            <Position x="1410" y="318" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1669,7 +1672,7 @@ if [New Field] &gt;= [User.tolerance] then "up" ...</DefaultAnnotationText>
             <MetaInfo connection="Output">
               <RecordInfo>
                 <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
                 <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
                 <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
                 <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
@@ -1682,7 +1685,7 @@ if [New Field] &gt;= [User.tolerance] then "up" ...</DefaultAnnotationText>
         </Node>
         <Node ToolID="24">
           <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-            <Position x="1518" y="318" />
+            <Position x="1506" y="318" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1708,7 +1711,7 @@ endif</Expression>
             <MetaInfo connection="Output">
               <RecordInfo>
                 <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
                 <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
                 <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
                 <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
@@ -1722,7 +1725,7 @@ endif</Expression>
         </Node>
         <Node ToolID="25">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="1614" y="318" />
+            <Position x="1602" y="318" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1743,7 +1746,7 @@ endif
             <MetaInfo connection="Output">
               <RecordInfo>
                 <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
                 <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
                 <Field description="Formula: [Field_1]-[Row-1:Field_1]" name="New Field" source="Formula: [Field_1]-[Row-1:Field_1]" type="Float" />
                 <Field name="First_RecordID" source="RecordID: Starting Value=1" type="Int32" />
@@ -1802,7 +1805,7 @@ endif
             </Annotation>
             <MetaInfo connection="Output">
               <RecordInfo>
-                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
                 <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
               </RecordInfo>
             </MetaInfo>
@@ -1829,8 +1832,8 @@ endif
             </Annotation>
             <MetaInfo connection="Output">
               <RecordInfo>
-                <Field name="Max_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
-                <Field name="Min_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="Max_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
+                <Field name="Min_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
                 <Field name="aaa" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="Float" />
               </RecordInfo>
             </MetaInfo>
@@ -1855,8 +1858,8 @@ endif
             </Annotation>
             <MetaInfo connection="Output">
               <RecordInfo>
-                <Field name="Max_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
-                <Field name="Min_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="Max_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
+                <Field name="Min_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
                 <Field name="aaa" size="1073741823" source="Formula: ([Max_Field_1]+[Min_Field_1])/2" type="V_WString" />
               </RecordInfo>
             </MetaInfo>
@@ -1881,8 +1884,8 @@ endif
             </Annotation>
             <MetaInfo connection="Output">
               <RecordInfo>
-                <Field name="Max_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
-                <Field name="Min_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="Max_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
+                <Field name="Min_Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
               </RecordInfo>
             </MetaInfo>
           </Properties>
@@ -1908,7 +1911,7 @@ endif
             </Annotation>
             <MetaInfo connection="Output">
               <RecordInfo>
-                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="Double" />
+                <Field name="Field_1" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="Double" />
               </RecordInfo>
             </MetaInfo>
           </Properties>
@@ -1921,7 +1924,7 @@ endif
           <Properties>
             <Configuration>
               <Passwords />
-              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">D:\Documents\GitHub\fusion-final-analytics\sample 5.csv</File>
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv</File>
               <FormatSpecificOptions>
                 <HeaderRow>False</HeaderRow>
                 <IgnoreErrors>False</IgnoreErrors>
@@ -1937,7 +1940,7 @@ endif
             </Configuration>
             <Annotation DisplayMode="0">
               <Name />
-              <DefaultAnnotationText>sample 5.csv</DefaultAnnotationText>
+              <DefaultAnnotationText>inclassdemo.csv</DefaultAnnotationText>
               <Left value="False" />
             </Annotation>
             <Dependencies>
@@ -1945,7 +1948,7 @@ endif
             </Dependencies>
             <MetaInfo connection="Output">
               <RecordInfo>
-                <Field name="Field_1" size="254" source="File: D:\Documents\GitHub\fusion-final-analytics\sample 5.csv" type="V_String" />
+                <Field name="Field_1" size="254" source="File: D:\Documents\GitHub\fusion-final-analytics\inclassdemo.csv" type="V_String" />
               </RecordInfo>
             </MetaInfo>
           </Properties>
