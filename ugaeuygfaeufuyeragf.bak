@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="54" y="138" />
+        <Position x="-78" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -27,6 +27,9 @@
           <DefaultAnnotationText>aaaaaaaaaaaa.csv</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="-61" size="254" source="File: D:\stewc\Documents\aaaaaaaaaaaa.csv" type="V_String" />
@@ -37,7 +40,7 @@
     </Node>
     <Node ToolID="2">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="378" y="138" />
+        <Position x="246" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -59,11 +62,11 @@
     </Node>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1506" y="270" />
+        <Position x="1398" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\stewc\AppData\Local\Temp\Engine_14808_454ee701886c44a3b339d08bf0ff4d8c_\Engine_28968_b0a9850961a344fb8e2ce13cb40acd48_.yxdb</TempFile>
+          <TempFile>C:\Users\stewc\AppData\Local\Temp\Engine_25420_bf822e4b789645988adeded8a4532d08_\Engine_1164_2438e49b0995404588753044c2be3098_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -87,7 +90,7 @@
     </Node>
     <Node ToolID="4">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="450" y="138" />
+        <Position x="318" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -106,7 +109,7 @@
     </Node>
     <Node ToolID="5">
       <GuiSettings Plugin="PlotlyCharting">
-        <Position x="1290" y="198" />
+        <Position x="1182" y="150" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -157,7 +160,7 @@
     </Node>
     <Node ToolID="6">
       <GuiSettings Plugin="VisualLayout">
-        <Position x="1434" y="138" />
+        <Position x="1302" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -174,7 +177,7 @@
             <Layout>
               <Node connectionName="#1" fieldName="Chart" height="871" isFused="false" isLocked="true" key="1" left="0" orientation="horizontal" repeatDirection="vertical" source="Report:Chart:" subWidth0="719" subWidthCount="1" top="0" width="719" />
             </Layout>
-            <TempFiles>{"#1":"C:\\Users\\stewc\\AppData\\Local\\Temp\\Engine_14808_454ee701886c44a3b339d08bf0ff4d8c_\\Engine_28968_5e42d31765494d1eaaed698dc42e1f95_.yxdb"}</TempFiles>
+            <TempFiles>{"#1":"C:\\Users\\stewc\\AppData\\Local\\Temp\\Engine_25420_bf822e4b789645988adeded8a4532d08_\\Engine_1164_2e941601622642c5a1afa4d2c7867658_.yxdb"}</TempFiles>
             <OriginalSnippets>{"#1":{"Chart":["C:\\Users\\stewc\\AppData\\Local\\Temp\\Alteryx_1164_e845ec8c-35f7-4148-9484-9d80e3c14179_\\Alteryx_1164_d90447af-c557-4129-aea7-dcdd67cfe7f8_.html"]}}</OriginalSnippets>
             <OriginalThumbnails>{"#1":{}}</OriginalThumbnails>
             <AllowResizing>true</AllowResizing>
@@ -197,7 +200,7 @@
     </Node>
     <Node ToolID="7">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="534" y="138" />
+        <Position x="402" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -221,7 +224,7 @@
     </Node>
     <Node ToolID="8">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="1062" y="462" />
+        <Position x="930" y="534" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -242,7 +245,7 @@ shift = ([cult]*16)+[diff]
     </Node>
     <Node ToolID="10">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="858" y="462" />
+        <Position x="726" y="534" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -263,7 +266,7 @@ diff = [sndder]*(mult*58)+[num]
     </Node>
     <Node ToolID="11">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="762" y="462" />
+        <Position x="630" y="534" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -282,7 +285,7 @@ diff = [sndder]*(mult*58)+[num]
     </Node>
     <Node ToolID="12">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="666" y="462" />
+        <Position x="534" y="534" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -306,7 +309,7 @@ diff = [sndder]*(mult*58)+[num]
     </Node>
     <Node ToolID="13">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="1218" y="462" />
+        <Position x="1086" y="534" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -330,7 +333,7 @@ diff = [sndder]*(mult*58)+[num]
     </Node>
     <Node ToolID="14">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="966" y="534" />
+        <Position x="834" y="606" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -354,11 +357,11 @@ diff = [sndder]*(mult*58)+[num]
     </Node>
     <Node ToolID="15">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="642" y="54" />
+        <Position x="510" y="126" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\stewc\AppData\Local\Temp\Engine_14808_454ee701886c44a3b339d08bf0ff4d8c_\Engine_28968_028cef53fc8e4deca0d2661badb317cd_.yxdb</TempFile>
+          <TempFile>C:\Users\stewc\AppData\Local\Temp\Engine_25420_bf822e4b789645988adeded8a4532d08_\Engine_1164_79f20f8c415544cab996ec60b30045c3_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -382,7 +385,7 @@ diff = [sndder]*(mult*58)+[num]
     </Node>
     <Node ToolID="28">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="978" y="834" />
+        <Position x="846" y="906" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -401,7 +404,7 @@ diff = [sndder]*(mult*58)+[num]
     </Node>
     <Node ToolID="29">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="1074" y="834" />
+        <Position x="942" y="906" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -431,7 +434,7 @@ if ([Row-1:mark] = "1dro...</DefaultAnnotationText>
     </Node>
     <Node ToolID="32">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="1182" y="834" />
+        <Position x="1050" y="906" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -459,7 +462,7 @@ if ([mark] = "d...</DefaultAnnotationText>
     </Node>
     <Node ToolID="33">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="1278" y="834" />
+        <Position x="1146" y="906" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -478,7 +481,7 @@ if ([mark] = "d...</DefaultAnnotationText>
     </Node>
     <Node ToolID="38">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="978" y="1026" />
+        <Position x="846" y="1098" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -502,7 +505,7 @@ if ([mark] = "d...</DefaultAnnotationText>
     </Node>
     <Node ToolID="19">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="870" y="834" />
+        <Position x="738" y="906" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -521,7 +524,7 @@ if ([mark] = "d...</DefaultAnnotationText>
     </Node>
     <Node ToolID="18">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="798" y="834" />
+        <Position x="666" y="906" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -545,7 +548,7 @@ if ([mark] = "d...</DefaultAnnotationText>
     </Node>
     <Node ToolID="17">
       <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
-        <Position x="690" y="834" />
+        <Position x="558" y="906" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -565,7 +568,7 @@ if ([mark] = "d...</DefaultAnnotationText>
     </Node>
     <Node ToolID="16">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="606" y="834" />
+        <Position x="474" y="906" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -584,34 +587,6 @@ if ([mark] = "d...</DefaultAnnotationText>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
     </Node>
-    <Node ToolID="39">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1386" y="198" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <TempFile>C:\Users\stewc\AppData\Local\Temp\Engine_14808_454ee701886c44a3b339d08bf0ff4d8c_\Engine_28968_fa7f479965d3422094e6fb6c640f00e5_.yxdb</TempFile>
-          <TempFileDataProfiling />
-          <Layout>
-            <ViewMode>Single</ViewMode>
-            <ViewSize value="100" />
-            <View1>
-              <DefaultTab>Report</DefaultTab>
-              <Hints>
-                <Table />
-              </Hints>
-            </View1>
-            <View2 />
-          </Layout>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-    </Node>
   </Nodes>
   <Connections>
     <Connection>
@@ -629,10 +604,6 @@ if ([mark] = "d...</DefaultAnnotationText>
     <Connection name="#1">
       <Origin ToolID="5" Connection="Output" />
       <Destination ToolID="6" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="5" Connection="Output" />
-      <Destination ToolID="39" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="6" Connection="Output" />
